@@ -1,0 +1,107 @@
+/* :root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: black;
+}
+
+.box {
+  background: #f3c6c6;
+}
+
+#user {
+  color: blue;
+}
+
+h1,
+h2,
+button {
+  color: green;
+}
+
+.button {
+  background: black;
+  color: yellow;
+}
+
+h4.button {
+  background: black;
+  color: yellow;
+}
+
+div > p {
+  color: chartreuse;
+}
+
+section em {
+  color: brown;
+} */
+
+.card {
+  background: rgb(234, 233, 233);
+}
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: green;
+}
+
+.card:hover {
+  background: yellow;
+}
+
+.link:active {
+  color: purple;
+}
+
+.card:active {
+  background: rgb(70, 70, 40);
+}
+
+input:focus {
+  background: grey;
+}
+
+.card:focus-within {
+  background: rgb(147, 249, 107);
+}
+
+button {
+  background: greenyellow;
+}
+
+button:enabled {
+  background: rgb(98, 158, 8);
+}
+
+button:disabled {
+  background: rgb(119, 206, 238);
+}
+
+.inp:read-write {
+  background-color: blue;
+}
+
+input[type='checkbox']:checked ~ span {
+  background-color: red;
+}

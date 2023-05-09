@@ -1,7 +1,8 @@
-html {
-  max-width: 720px;
+.page {
+  background-color: #ffffff;
 }
 
-body {
-  background: #fff;
+.page_content {
+  max-width: 960px;
+  margin: 0 auto;
 }
