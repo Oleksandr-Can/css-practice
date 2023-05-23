@@ -1,0 +1,46 @@
+<header class='header'>
+  {{> header}} 
+</header>
+
+
+<section class="main">
+  {{#with main}}
+  <img src="{{image}}" alt="Main img" class="main_image">
+  <div class="main_content">
+    <h1 class="main_title">{{heading}}</h1>
+    <p class="main_text">{{descriotion}}</p>
+    <div>
+      <a class="button main_button" href="{{href}}">{{button}}</a>
+    </div>
+  </div>
+  {{/with}}
+</section>
+
+
+<main class="featured">
+  {{#each featured}}
+   {{> cardFeatured data=this}}
+  {{/each}}
+</main>
+
+
+<section class='actions'>
+  {{#each actions}}
+    <div class='actions_content'>
+      <h3 class='actions_title'>{{heading}}</h3>
+      <div class='form_actions'>
+        <a
+          class='button actions_button'
+          href='{{url}}'
+        >{{text}}</a>
+      </div>
+    </div>
+ {{/each}}
+</section>
+
+
+<footer class="footer">
+ {{> footer}}
+</footer>
+  
+  
