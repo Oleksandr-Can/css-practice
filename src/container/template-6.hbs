@@ -1,0 +1,89 @@
+<header class='header'>
+  {{> header}} 
+</header>
+
+<main class="main">
+  {{#with info}}
+    <div class="info">
+      <h1 class="info_title">{{title}}</h1>
+      <div class="info_description">
+        <p class="info_description_text">{{description}}</p>
+      </div>
+    </div>
+  {{/with}}
+  {{#with form}}
+    <form class="form">
+      <h2 class="form_title">{{title}}</h2>
+        <div class="form_inputs_list">
+          {{#each inputs}}
+            <input type={{type}} id="form-input-{{id}}" class="form_input" placeholder="{{placeholder}}" name="{{name}}">
+          {{/each}}
+        </div>
+        <div class="form_checkbox">
+          {{#with checkbox}}
+            <input type="checkbox" name="{{name}}" id="{{name}}">
+            <label for="{{checkbox}}">{{label}}</label>
+          {{/with}}
+        </div>
+      <button type="submit" class="form_button">{{button}}</button>
+      <div class="form_border"></div>
+      <p class="form_info">{{info}}</p>
+    </form>
+  {{/with}} 
+</main>
+
+<div class="updates">
+  {{#with updates}}
+    <div class="updates_title">
+      <strong>{{title}}</strong>
+    </div>
+    <div class="updates_list">
+      {{#each list}}
+        <div>
+          <div class="updates_list_img">
+            <img src="#">
+          </div>
+          <div class="updates_list_description">
+            <div>{{nickname}}</div>
+            <p>{{description}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    {{#with show_all}}
+      <a href="{{url}}" class="show_all_link">{{text}}</a>
+    {{/with}}
+  {{/with}}
+</div>
+
+<div class="expirience">
+  {{#with expirience}}
+    <div class="expirience_title">
+      <h2>{{title}}</h2>
+      <div class="expirience_badge">
+        <div>{{badge}}</div>
+      </div>
+    </div>
+    <div class="expirience_card_list">
+      {{#each list}}
+        <div class="expirience_list">
+          <div class="expirience_list_name">
+            {{name}}
+          </div>
+          <div class="expirience_list_details">
+            {{details}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{/with}}
+
+</div>
+
+
+
+<footer class="footer">
+ {{> footer}}
+</footer>
+  
+  
