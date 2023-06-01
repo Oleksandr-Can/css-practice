@@ -1,17 +1,8 @@
 <header class="header_dark">
   <div class='header'>
-    <div>   
-        {{> logo}}
-    </div>
-    <nav class='header_nav'>
-        {{#with header}}
-            <div class="nav_inline">
-                {{> nav list=links}}
-            </div>
-        {{/with}}   
-    </nav> 
+  {{> header}} 
   </div>
-<div class="header_ad">
+  <div class="header_ad">
     <div>
       <span class='header_icon_ad'> 
         Ad  
@@ -22,5 +13,5 @@
     <span>User onlines:</span>
     {{header.userOnline}}
   </div>   
-</div>
+  </div>
 </header>
