@@ -497,7 +497,8 @@ body {
     }
 
     .features_grid_3 {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
     }
 
     .hero_buttons {
