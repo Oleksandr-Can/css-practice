@@ -509,7 +509,7 @@ body {
     .card_explore {
       grid-template-columns: 1fr;
       gap: var(--spacing-5);
-      padding-inline: var(--spacing-4);
+      padding-inline: var(--spacing-1);
     }
   }
 }
