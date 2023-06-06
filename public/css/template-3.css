@@ -304,7 +304,7 @@
   container-name: hero;
 }
 
-@container hero (width < 960px) {
+@container hero (width < 959px) {
   .hero {
     flex-direction: column;
   }
